@@ -1,0 +1,166 @@
+@media ( max-width:1023px ){
+  .site-header { height: 74px; }
+  .header-inner { grid-template-columns: 1fr auto; }
+
+  .desktop-nav, 
+  .header-tools > a,
+  .search-open { display: none; }
+  .header-tools { gap: 12px; }
+  .header-tools .search-open img {
+    filter:
+      brightness(0)
+      invert(1)
+      drop-shadow(0 0 0.4px #fff);
+  }
+  .menu-toggle { display: block; }
+  .mobile-menu { 
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    padding: 0 var(--pad);
+    background: #0b0c0e;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition:.35s;
+  }
+  .mobile-menu.is-open { opacity: 1; visibility: visible; }
+  .mobile-menu a { 
+    font-size: clamp(40px,9vw,78px);
+    line-height: 1.12;
+    letter-spacing: -.06em; 
+  }
+  .mobile-menu a:hover { color: #5bdb70; }
+  .mobile-menu a + a {
+    margin-top: 22px;
+  }
+  .mobile-menu p { margin-top: 35px; font-size: 12px; }
+  .hero { min-height: 650px; }
+
+  .hero-copy h1, 
+  .hero-copy h2 { font-size: clamp(58px,11vw,100px); }
+  .section { padding-block: 110px; }
+  .story-grid { gap: 70px 22px; }
+  .story, .story:nth-child(2),
+  .story-tall, .story:nth-child(4){
+    grid-column: span 6;
+    margin-top:0;
+  }
+  .story-wide { grid-column: 1/-1; }
+  .news article { flex-basis: calc((100% - 22px)/2); }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 60px; }
+  .footer-meta { grid-column: 1/-1; }
+}
+
+
+
+@media ( max-width:640px ){
+  :root { --pad: 20px; }
+  .site-header { 
+    mix-blend-mode: normal;
+    background: rgba(247,247,244,.92);
+    color: #111;
+    backdrop-filter: blur(12px);
+  }
+  .header-tools .lang { display: none; }
+  .header-tools .instagram-link img,
+  .header-tools .search-open img {
+    filter: brightness(0);
+    opacity: 0.65;
+  }
+  .header-tools .search-open img {
+  filter:
+    brightness(0)
+    drop-shadow(0 0 0.4px #000);
+  }
+
+  .hero {
+    height: 760px;
+    min-height: 0;
+  }
+  .hero { height: 760px; min-height: 0; }
+  .hero-copy { 
+    top: auto;
+    bottom: 130px;
+    transform: none; 
+  }
+  .hero-copy > p { font-size: 10px; }
+  .hero-copy h1,
+  .hero-copy h2 { font-size: clamp(48px,16vw,72px); }
+  .hero-copy a { margin-top: 26px; }
+  .hero-index { bottom: 26px; }
+  .hero-controls { bottom: 20px; }
+  .hero-progress { width: 70px; }
+  .scroll-hint { display: none; }
+  .art-love::before { 
+    width: 100vw;
+    height: 100vw;
+    left: 20%;
+    top: 10%; 
+  }
+  .art-love i:nth-child(1){
+    width: 68vw;
+    height: 68vw;
+    right: -18%;
+    top: 16%;
+  }
+  .art-love i:nth-child(2){
+    width: 34vw;
+    height: 34vw;
+    right: 33%;
+    bottom: 32%; 
+  }
+  .art-love i:nth-child(3){
+    width: 18vw;
+    height: 18vw;
+    left: 52%;
+    top: 10%; 
+  }
+  .art-circular { 
+    background: radial-gradient( circle at 65% 35%,
+    #fbfbfc 0 7%,#c7ccd2 8% 14%,
+    #333942 15% 22%,#050607 23% 34%,
+    #1d4580 70% 50%,#07090b 48%);
+  }
+  .art-miami::before { width: 38vw; }
+  .art-miami i:nth-child(1){
+    width: 53vw;
+    height: 53vw;
+    right: -15%;
+    top: 14%; 
+  }
+  .art-miami i:nth-child(2){
+    width: 32vw;
+    height: 45vh;
+    right: 42%; 
+  }
+  .section { padding-block: 85px; }
+  .intro h2 { font-size: 46px; }
+  .intro-desc { width: 100%; margin-top: 40px; }
+  .section-head { margin-bottom: 42px; }
+  .section-head h2, .tags h2 { font-size: 52px; }
+  .section-head > a { font-size: 11px; }
+  .story-grid { display: block; }
+
+  .story,.story:nth-child(2),
+  .story-tall,.story:nth-child(4),
+  .story-wide { margin: 0 0 65px; }
+
+  .story-image,
+  .story-large .story-image,
+  .story-tall .story-image,
+  .story-wide .story-image { aspect-ratio: 4/3; }
+  .story-copy h3 { font-size: 28px; }
+  .tag-cloud { gap: 8px; margin-top: 40px; }
+  .tag-cloud a { padding: 12px 16px; font-size: 15px; }
+  .news article { flex-basis: 86%; }
+  .news-controls > span { width: 80px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 55px; }
+  .footer-meta { grid-column: auto; }
+  .back-top { top: auto; bottom: 0; }
+}

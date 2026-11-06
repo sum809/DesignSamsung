@@ -1,0 +1,56 @@
+/* Local image assets: complete when opened offline. */
+.hero-art > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-art::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .38), rgba(0, 0, 0, .04) 58%, transparent);
+}
+
+.art-love,
+.art-circular,
+.art-miami { background: #111; }
+
+.art-love::before,
+.art-miami::before,
+.hero-art > i { display: none; }
+
+.hero-slide { color: #fff; }
+.hero-copy { text-shadow: 0 2px 28px rgba(0, 0, 0, .24); }
+
+.story-image > img,
+.news-thumb > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .75s cubic-bezier(.2, .7, .2, 1);
+}
+
+.story a:hover .story-image > img,
+.news article:hover .news-thumb > img { transform: scale(1.045); }
+
+.news-thumb { position: relative; background: #1b1c20; }
+.news-thumb::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, .05), rgba(0, 0, 0, .48));
+}
+
+.news-thumb span {
+  position: absolute;
+  z-index: 2;
+  left: 24px;
+  bottom: 18px;
+  color: #fff;
+  font-size: clamp(24px, 3.4vw, 56px);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .25);
+}

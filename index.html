@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Samsung Design 웹사이트를 참고해 직접 구현한 포트폴리오 클론 코딩 프로젝트">
+  <title>Design Samsung — Clone Study</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Design Samsung 홈">
+        <span>DESIGN</span>
+        <strong>SAMSUNG</strong>
+      </a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#vision">Vision</a>
+        <a href="#stories">Stories</a>
+        <a href="#news">News</a>
+        <a href="#career">Career</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header-tools">
+        <a href="#stories" class="instagram-link" aria-label="Instagram">
+          <img src="images/free-icon-instagram-4922972.png" alt="인스타그램">
+        </a>
+        <button class="search-open" type="button" aria-label="검색 열기">
+          <img src="images/tools_01.svg" alt="검색">
+        </button>
+        <button class="lang" type="button" aria-label="언어 선택">KR</button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <b class="blind">메뉴</b>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴">
+      <a href="#vision">Vision</a>
+      <a href="#stories">Stories</a>
+      <a href="#news">News</a>
+      <a href="#career">Career</a>
+      <a href="#about">About</a>
+      <p>KR · EN</p>
+    </nav>
+  </header>
+
+  <div class="search-panel" aria-hidden="true">
+    <button class="search-close" type="button" aria-label="검색 닫기">×</button>
+    <form class="search-form">
+      <label for="site-search">Search</label>
+      <div><input id="site-search" type="search" placeholder="검색어를 입력해 주세요">
+        <button type="submit">→</button>
+      </div>
+    </form>
+    <div class="popular">
+      <span>Popular</span>
+      <a href="#">Galaxy</a>
+      <a href="#">UX/UI</a>
+      <a href="#">Design Award</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="메인 디자인 스토리">
+      <div class="hero-track">
+        <article class="hero-slide is-active" data-theme="light">
+          <div class="hero-art art-love" aria-hidden="true">
+            <img src="images/hero-love.png" alt="">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <div class="hero-copy">
+            <p>Samsung × POLI.design</p>
+            <h1>
+              Design is an <br>
+              act of love
+            </h1>
+            <a href="#stories">View story 
+              <span>↗</span>
+            </a>
+          </div>
+          <span class="hero-index">01 / 03</span>
+        </article>
+        <article class="hero-slide" data-theme="dark">
+          <div class="hero-art art-circular" aria-hidden="true">
+            <img src="images/hero-circular.png" alt="">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <div class="hero-copy">
+            <p>One UI design story</p>
+            <h2>
+              A Circular <br>
+              Experience Refined
+            </h2>
+            <a href="#stories">View story 
+              <span>↗</span>
+            </a>
+          </div>
+          <span class="hero-index">02 / 03</span>
+        </article>
+        <article class="hero-slide" data-theme="blue">
+          <div class="hero-art art-miami" aria-hidden="true">
+            <img src="images/hero-miami.png" alt="">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+          <div class="hero-copy">
+            <p>Design Miami Seoul</p>
+            <h2>
+              Artworks for <br>
+              a better future
+            </h2>
+            <a href="#stories">View story 
+              <span>↗</span>
+            </a>
+          </div>
+          <span class="hero-index">03 / 03</span>
+        </article>
+      </div>
+      <div class="hero-controls">
+        <button class="hero-prev" type="button" aria-label="이전 슬라이드">←</button>
+        <div class="hero-progress">
+          <i></i>
+        </div>
+        <button class="hero-next" type="button" aria-label="다음 슬라이드">→</button>
+      </div>
+      <div class="scroll-hint">
+        <span></span>
+        SCROLL
+      </div>
+    </section>
+
+    <section class="intro section" id="vision">
+      <div class="section-inner reveal">
+        <p class="kicker">Our design vision</p>
+        <h2>
+          사람과 기술 사이, <br>
+          더 나은 내일을 디자인합니다.
+        </h2>
+        <p class="intro-desc">
+          본질을 이해하고 새로운 가능성을 발견하는 일. <br>
+          디자인은 기술을 사람의 경험으로 바꾸는 <br>
+          가장 섬세한 언어입니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="stories section" id="stories">
+      <div class="section-inner">
+        <div class="section-head reveal"><h2>Latest Stories</h2><a href="#story-grid">View all <span>↗</span></a></div>
+        <div class="story-grid" id="story-grid">
+          <article class="story story-large reveal">
+            <a href="#">
+              <div class="story-image">
+                <img src="images/story-display.png" alt="어두운 갤러리에 놓인 곡선형 디스플레이">
+              </div>
+              <div class="story-copy">
+                <p class="tag">TV / AV</p>
+                <h3>Expressive design</h3>
+                <p>경계를 넘어 확장되는 화면의 새로운 표현</p>
+                <time>August 31, 2026</time>
+              </div>
+            </a>
+          </article>
+          <article class="story reveal">
+            <a href="#">
+              <div class="story-image">
+                <img src="images/story-fold.png" alt="스톤 오브제 위에 놓인 폴더블 디바이스">
+              </div>
+              <div class="story-copy">
+                <p class="tag">GALAXY · MOBILE</p>
+                <h3>The Aesthetic of Comfort</h3>
+                <p>편안함을 위한 정교한 균형</p>
+                <time>July 30, 2026</time>
+              </div>
+            </a>
+          </article>
+          <article class="story story-tall reveal">
+            <a href="#">
+              <div class="story-image">
+                <img src="images/story-air.png" alt="공기의 흐름을 표현한 공기청정기 오브제">
+              </div>
+              <div class="story-copy">
+                <p class="tag">APPLIANCE · BESPOKE</p>
+                <h3>The Aesthetics of Unseen Air</h3>
+                <p>보이지 않는 공기를 다루는 디자인</p>
+                <time>July 16, 2026</time>
+              </div>
+            </a>
+          </article>
+          <article class="story reveal">
+            <a href="#">
+              <div class="story-image">
+                <img src="images/story-sound.png" alt="노란 공간에 배치된 조형적인 스피커">
+              </div>
+              <div class="story-copy">
+                <p class="tag">AUDIO · COLLABORATION</p>
+                <h3>Where Design Meets Reality</h3>
+                <p>공간 속에서 완성되는 사운드</p>
+                <time>June 17, 2026</time>
+              </div>
+            </a>
+          </article>
+          <article class="story story-wide reveal">
+            <a href="#">
+              <div class="story-image">
+                <img src="images/story-exhibition.png" alt="코발트 유리와 빛으로 구성된 전시 공간">
+              </div>
+              <div class="story-copy">
+                <p class="tag">BRANDING · EXHIBITION</p>
+                <h3>Design is an act of love</h3>
+                <p>감각과 기술이 교차하는 전시의 순간</p>
+                <time>April 20, 2026</time>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tags section" aria-labelledby="tag-title">
+      <div class="section-inner">
+        <p class="kicker reveal">Explore stories</p>
+        <h2 id="tag-title" class="reveal">Discover by Tag</h2>
+        <div class="tag-cloud reveal">
+          <a href="#">Visual Graphics</a>
+          <a href="#">Branding</a>
+          <a href="#">Packaging</a>
+          <a href="#">Sound</a>
+          <a href="#">UX/UI</a>
+          <a href="#">CMF</a>
+          <a href="#">Galaxy</a>
+          <a href="#">Design Thinking</a>
+          <a href="#">One UI</a>
+          <a href="#">Campaign</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section" id="news">
+      <div class="section-inner">
+        <div class="section-head reveal"><h2>News</h2><a href="#">View all <span>↗</span></a></div>
+        <div class="news-viewport reveal">
+          <div class="news-track">
+            <article>
+              <a href="#">
+                <div class="news-thumb news-a">
+                  <img src="images/story-display.png" alt="">
+                  <span>IDEA</span>
+                </div>
+                <h3>2026 IDEA · Red Dot Design Award</h3>
+                <time>August 24, 2026</time>
+              </a>
+            </article>
+            <article>
+              <a href="#">
+                <div class="news-thumb news-b">
+                  <img src="images/story-fold.png" alt="">
+                  <span>CONCEPT</span>
+                </div>
+                <h3>Red Dot Design Concept Award</h3>
+                <time>July 14, 2026</time>
+              </a>
+            </article>
+            <article>
+              <a href="#">
+                <div class="news-thumb news-c">
+                  <img src="images/story-exhibition.png" alt="">
+                  <span>MILANO</span>
+                </div>
+                <h3>Design Week Exhibition</h3>
+                <time>March 17, 2026</time>
+              </a>
+              </article>
+            <article>
+              <a href="#">
+                <div class="news-thumb news-d">
+                  <img src="images/story-sound.png" alt="">
+                  <span>iF</span>
+                </div>
+                <h3>2026 iF Design Award</h3>
+                <time>February 26, 2026</time>
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="news-controls">
+          <button class="news-prev" type="button" aria-label="이전 뉴스">←</button>
+          <span>
+            <i></i>
+          </span>
+          <button class="news-next" type="button" aria-label="다음 뉴스">→</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="footer-inner">
+      <div>
+        <a class="footer-logo" href="#top">DESIGN<br>
+          <strong>SAMSUNG</strong>
+        </a>
+        <p>Design for a better tomorrow.</p>
+      </div>
+      <nav aria-label="푸터 메뉴">
+        <a href="#vision">Vision</a>
+        <a href="#stories">Stories</a>
+        <a href="#news">News</a>
+        <a href="#">Career</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="footer-meta">
+        <p>Clone coding study for portfolio</p>
+        <p>Original design reference: Samsung Design</p>
+        <p>© 2026 Clone Study</p>
+      </div>
+      <a class="back-top" href="#top" aria-label="맨 위로">↑</a>
+    </div>
+  </footer>
+<script type="module">
+  import { mountSiteWidget } from "/_sites/dispatch-assets/sites-widget.js";
+  mountSiteWidget({
+    "kind":"editor-composer","mobileEnabled":false,
+    "environment":"production","chatgptOrigin":"https://chatgpt.com",
+    "locale":"ko-KR","accountId":"personal","projectId":"appgprj_6adf0c03e90c819180e08fa0c0ffef3b",
+    "projectTitle":"Samsung Design Clone Study"
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+*, 
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body, 
+h1,
+h2,
+h3,
+p,
+ul { margin: 0; }
+
+body { min-width: 320px; }
+button, input { font: inherit; }
+button { 
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
